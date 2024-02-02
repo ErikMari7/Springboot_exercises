@@ -6,4 +6,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Applicazione2 {
     public static void main(String[] args) {SpringApplication.run(Applicazione2.class, args);}
+
 }
