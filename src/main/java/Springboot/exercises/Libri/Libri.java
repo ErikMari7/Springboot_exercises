@@ -1,7 +1,11 @@
 package Springboot.exercises.Libri;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 public class Libri {
+    @Schema(description = "id del libro", example = "1")
     int id;
+    @Schema(description = "titolo del libro", example = "Il signore degli anelli")
     String titolo;
     String autore;
     String genere;
@@ -43,5 +47,15 @@ public class Libri {
 
     public void setGenere(String genere) {
         this.genere = genere;
+    }
+
+    @Override
+    public String toString() {
+        return "Libri{" +
+                "id=" + id +
+                ", titolo='" + titolo + '\'' +
+                ", autore='" + autore + '\'' +
+                ", genere='" + genere + '\'' +
+                '}';
     }
 }
